@@ -1,0 +1,121 @@
+<!-- STRAT NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark"  id="navbar">
+    <div class="container">
+      <a class="navbar-brand logo" href="/">
+        <img src="assets/st.jpg" alt="" class="logo-dark " height="30" /> 
+        <img src="assets/st-dark.png" alt="" class="logo-light" height="30" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleMenu()">
+      <i class="mdi mdi-menu"></i>
+    </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mx-auto navbar-center" id="mySidenav">
+            <li class="nav-item" [ngClass]="{'active':currentSection === 'home'}">
+              <a href="javascript: void(0);" [ngxScrollTo]="'#home'" class="nav-link" (click)="toggleMenu()">Accueil</a>
+            </li>
+            <li class="nav-item" [ngClass]="{'active':currentSection === 'pqn'}">
+              <a href="javascript: void(0);" [ngxScrollTo]="'#pqn'" class="nav-link" (click)="toggleMenu()"
+                [ngxScrollToOffset]="5">Pour Quoi Nous Choisir ?</a>
+            </li>
+            <li class="nav-item" [ngClass]="{'active':currentSection === 'features'}">
+              <a href="javascript: void(0);" [ngxScrollTo]="'#features'" class="nav-link"
+                [ngxScrollToOffset]="5" (click)="toggleMenu()">Qui Sommes Nous ?</a>
+            </li>
+            <li class="nav-item" [ngClass]="{'active':currentSection === 'services'}">
+              <a href="javascript: void(0);" [ngxScrollTo]="'#services'" class="nav-link"
+                [ngxScrollToOffset]="5" (click)="toggleMenu()">Services</a>
+            </li>
+            <li class="nav-item" [ngClass]="{'active':currentSection === 'blog'}">
+              <a href="javascript: void(0);" [ngxScrollTo]="'#blog'" class="nav-link" [ngxScrollToOffset]="5" (click)="toggleMenu()">Gallerie</a>
+            </li>
+            <li class="nav-item" [ngClass]="{'active':currentSection === 'team'}">
+              <a href="javascript: void(0);" [ngxScrollTo]="'#team'" class="nav-link" [ngxScrollToOffset]="5" (click)="toggleMenu()">Equipe</a>
+            </li>
+            <li class="nav-item" [ngClass]="{'active':currentSection === 'contact'}">
+              <a href="javascript: void(0);" [ngxScrollTo]="'#contact'" class="nav-link" [ngxScrollToOffset]="5" (click)="toggleMenu()">Contact</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav navbar-center">
+       
+          </ul>
+        </div>
+    </div>
+</nav>
+<!-- END NAVBAR -->
+
+<div appScrollspy [spiedTags]="['SECTION']" (sectionChange)="onSectionChange($event)">
+    <!-- START HOME -->
+    <section class="half-home" id="home">
+        <img name="silde" class="slide-img" id="isSlideImage" src="assets/images/slide-1.jpg" style="max-height: 50%;max-width: 100%;">
+        <!--<div class="bg-overlay"></div>-->
+        <div class="home-center">
+            <div class="home-desc-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero End -->
+    <app-pricing></app-pricing>
+    <app-features></app-features>
+    <app-services></app-services> 
+    <app-blog></app-blog>
+    <app-team></app-team>
+    <carousel style="color:steelblue;">
+      <div class="carousel-cell">
+          <img src="assets/img/partnar/partner-img1.png">
+      </div>
+      <div class="carousel-cell">
+        <img src="assets/img/partnar/partner-img2.png">
+      </div>
+      <div class="carousel-cell">
+      <img src="assets/img/partnar/partner-img3.png">
+      </div>
+      <div class="carousel-cell">
+      <img src="assets/img/partnar/partner-img4.png">
+     </div>
+     <div class="carousel-cell">
+      <img src="assets/img/partnar/partner-img5.png">
+     </div>
+     <div class="carousel-cell">
+      <img src="assets/img/partnar/partner-img6.png">
+     </div>
+     <div class="carousel-cell">
+      <img src="assets/img/partnar/partner-img7.png">
+     </div>
+     <div class="carousel-cell">
+      <img src="assets/img/partnar/partner-img8.png">
+     </div>
+     <div class="carousel-cell">
+      <img src="assets/img/partnar/partner-img9.png">
+     </div>
+     <div class="carousel-cell">
+      <img src="assets/img/partnar/partner-img10.png">
+     </div>
+     <div class="carousel-cell">
+      <img src="assets/img/partnar/partner-img11.png">
+     </div>
+     <div class="carousel-cell">
+      <img src="assets/img/partnar/partner-img12.png">
+     </div>
+     <div class="carousel-cell">
+      <img src="assets/img/partnar/partner-img13.png">
+     </div>
+     <div class="carousel-cell">
+      <img src="assets/img/partnar/partner-img14.png">
+     </div>
+     <div class="carousel-cell">
+      <img src="assets/img/partnar/partner-img15.png">
+     </div>
+  </carousel>
+    <app-contact></app-contact>
+    <app-footer></app-footer>
+  </div>
+
+ 
