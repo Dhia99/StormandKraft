@@ -18,9 +18,12 @@ import { Service5Component } from './service5/service5.component';
 import { Service6Component } from './service6/service6.component';
 import { Service7Component } from './service7/service7.component';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
+import { Service21Component } from './service21/service21.component';
+import { Service22Component } from './service22/service22.component';
+import { Service23Component } from './service23/service23.component';
 
 @NgModule({
-  declarations: [Index6Component,Projet1Component, Projet2Component, Projet3Component, Service1Component, Service2Component, Service3Component, Service4Component, Service5Component, Service6Component, Service7Component],
+  declarations: [Index6Component,Projet1Component, Projet2Component, Projet3Component, Service1Component, Service2Component, Service3Component, Service4Component, Service5Component, Service6Component, Service7Component, Service21Component, Service22Component, Service23Component],
   imports: [
     CommonModule,
     PagesRoutingModule,

@@ -4,7 +4,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 @Component({
   selector: 'app-index6',
   templateUrl: './index6.component.html',
-  styleUrls: ['./index6.component.scss']
+  styleUrls: ['./index6.component.css']
 })
 
 /**

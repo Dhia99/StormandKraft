@@ -16,6 +16,9 @@ import {
 import { ScrollspyDirective } from './scrollspy.directive';
 import { FormsModule } from '@angular/forms';
 import { TeamComponent } from './team/team.component';
+import { QualiteComponent } from './qualite/qualite.component';
+import { PrixComponent } from './prix/prix.component';
+import { DelaiComponent } from './delai/delai.component';
 
 const icons = {
   Mail, Link, PhoneCall, Clock, MapPin, Facebook, Twitter, Instagram, Linkedin, Send, Calendar, User, Server, Rss, Layout, LifeBuoy,
@@ -25,7 +28,7 @@ const icons = {
 
 @NgModule({
   // tslint:disable-next-line: max-line-length
-  declarations: [TeamComponent,FeaturesComponent, PricingComponent, BlogComponent, ContactComponent, ServicesComponent, FooterComponent, ScrollspyDirective,],
+  declarations: [TeamComponent,FeaturesComponent, PricingComponent, BlogComponent, ContactComponent, ServicesComponent, FooterComponent, ScrollspyDirective, QualiteComponent, PrixComponent, DelaiComponent,],
   imports: [
     CommonModule,
     FeatherModule.pick(icons),
@@ -33,7 +36,7 @@ const icons = {
     CountToModule
   ],
   // tslint:disable-next-line: max-line-length
-  exports: [TeamComponent,FeaturesComponent, PricingComponent, BlogComponent, ContactComponent, ServicesComponent, FooterComponent, FeatherModule, ScrollspyDirective]
+  exports: [TeamComponent,FeaturesComponent, PricingComponent, BlogComponent, ContactComponent, ServicesComponent, FooterComponent, FeatherModule, ScrollspyDirective, QualiteComponent, PrixComponent, DelaiComponent,]
 })
 export class SharedModule { }
 
